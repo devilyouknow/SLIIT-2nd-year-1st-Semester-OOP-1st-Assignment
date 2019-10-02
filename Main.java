@@ -12,18 +12,18 @@ public class Main{
 class Student{
   private String id;
   private String name;
-  private int mark1;
-  private int mark2;
-  private int mark3;
+  private int mark_1;
+  private int mark_2;
+  private int mark_3;
   private float average;
   
   
-  public Student(String id, String name, int mark1, int mark2, int mark3){
+  public Student(String id, String name, int mark_1, int mark_2, int mark_3){
     this.id=id;
     this.name=name;
-    this.mark1=0;
-    this.mark2=0;
-    this.mark3=0;
+    this.mark_1=0;
+    this.mark_2=0;
+    this.mark_3=0;
     
   }
   public void showDetail(){
@@ -35,11 +35,11 @@ class Student{
 }
   public void calaverage(){
     Scanner ob1=new Scanner(System.in);
-    mark1=ob1.nextInt();
-    mark2=ob1.nextInt();
-    mark3=ob1.nextInt();
+    mark_1=ob1.nextInt();
+    mark_2=ob1.nextInt();
+    mark_3=ob1.nextInt();
     
-    int total=mark1+mark2+mark3;
+    int total=mark_1+mark_2+mark_3;
     average=total/3;
   }
 }
